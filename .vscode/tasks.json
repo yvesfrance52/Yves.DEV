@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Installer les dépendances",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lancer le site",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "dependsOn": "Installer les dépendances"
+    },
+    {
+      "label": "Vérifier tout (tests + build + navigateur)",
+      "type": "shell",
+      "command": "npm run verify",
+      "problemMatcher": []
+    },
+    {
+      "label": "Régénérer site-pret (site à ouvrir avec Live Server)",
+      "type": "shell",
+      "command": "npm run local",
+      "problemMatcher": []
+    }
+  ]
+}

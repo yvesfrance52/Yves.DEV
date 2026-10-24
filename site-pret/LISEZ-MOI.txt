@@ -1,0 +1,11 @@
+Yves.DEV - site prêt à ouvrir
+==============================
+
+index.html contient le site complet (images et polices comprises) dans un seul fichier.
+
+- Double-clic sur index.html : le site s'ouvre dans le navigateur.
+- Dans VS Code : clic droit sur index.html > Open with Live Server,
+  ou bouton "Go Live" en bas à droite (il ouvre ce dossier automatiquement).
+
+Ce fichier est GÉNÉRÉ : ne le modifiez pas à la main.
+Modifiez le code dans src/, puis lancez "npm run local" pour le régénérer.
